@@ -56,10 +56,11 @@ const WhyChooseUs = () => {
 
   return (
     <div className="py-20 bg-gray-50 relative overflow-hidden">
-      {/* Top Decorative element only */}
+      {/* Top Decorative Element */}
       <div className="absolute top-0 right-0 w-48 h-48 sm:w-64 sm:h-64 rounded-full bg-[#C8252C]/10 blur-3xl"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* Main Container with max-w-7xl */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <motion.div
           className="mb-12 sm:mb-16 text-center"
@@ -93,7 +94,7 @@ const WhyChooseUs = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              {/* Background decoration */}
+              {/* Background Decoration */}
               <div
                 className={`absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 rounded-full ${service.bgIcon} opacity-5 blur-2xl transform translate-x-1/2 -translate-y-1/2`}
               ></div>
@@ -113,8 +114,6 @@ const WhyChooseUs = () => {
                 <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4">
                   {service.description}
                 </p>
-
-              
               </div>
             </motion.div>
           ))}

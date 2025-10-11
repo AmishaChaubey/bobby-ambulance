@@ -116,16 +116,16 @@ export default function AboutPage() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 font-serif">
             Our <span className="text-red-900">Mission</span>
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-3">
+          <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-3 text-justify">
             We are dedicated to providing the highest quality pre-hospital
             emergency care and medical transportation services to our community.
           </p>
-          <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-3">
+          <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-3 text-justify">
             With cutting-edge equipment, highly trained medical professionals,
             and a commitment to excellence, we ensure that every patient
             receives the critical care they need during transport.
           </p>
-          <p className="text-sm sm:text-base md:text-lg text-gray-700">
+          <p className="text-sm sm:text-base md:text-lg text-gray-700 text-justify">
             Our goal is simple: to bridge the gap between emergency and hospital
             care, giving patients the best chance at recovery.
           </p>
@@ -210,50 +210,51 @@ export default function AboutPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="relative bg-gradient-to-br from-[#96080B] via-[#B0151C] to-[#C8252C] text-white py-10 sm:py-16 overflow-hidden mb-12">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/3 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-white rounded-full blur-3xl animate-pulse"></div>
-          <div
-            className="absolute bottom-1/3 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-white rounded-full blur-3xl animate-pulse"
-            style={{ animationDelay: "1.5s" }}
-          ></div>
-          <div
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-[500px] sm:h-[500px] bg-white rounded-full blur-3xl animate-pulse opacity-5"
-            style={{ animationDelay: "3s" }}
-          ></div>
-        </div>
+  <div className="relative bg-gradient-to-br from-[#96080B] via-[#B0151C] to-[#C8252C] text-white py-10 sm:py-16 overflow-hidden mb-12">
+  <div className="absolute inset-0 opacity-10">
+    <div className="absolute top-1/3 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-white rounded-full blur-3xl animate-pulse"></div>
+    <div
+      className="absolute bottom-1/3 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-white rounded-full blur-3xl animate-pulse"
+      style={{ animationDelay: "1.5s" }}
+    ></div>
+    <div
+      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-[500px] sm:h-[500px] bg-white rounded-full blur-3xl animate-pulse opacity-5"
+      style={{ animationDelay: "3s" }}
+    ></div>
+  </div>
 
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
-          <div className="inline-flex items-center justify-center mb-4 sm:mb-6 bg-white/10 backdrop-blur-sm px-3 py-1 sm:px-4 sm:py-2 rounded-full">
-            <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-            <span className="text-xs sm:text-sm font-medium">Available 24/7</span>
-          </div>
+  <div className="relative max-w-5xl mx-auto px-4 sm:px-6 md:px-8 text-center">
+    <div className="inline-flex items-center justify-center mb-4 sm:mb-6 bg-white/10 backdrop-blur-sm px-3 py-1 sm:px-4 sm:py-2 rounded-full">
+      <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+      <span className="text-xs sm:text-sm font-medium">Available 24/7</span>
+    </div>
 
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 tracking-tight">
-            Ready to Serve You <span className="text-red-200">24/7</span>
-          </h2>
+    <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 tracking-tight">
+      Always Ready to <span className="text-red-200">Serve You 24/7</span>
+    </h2>
 
-          <p className="text-sm sm:text-xl md:text-2xl mb-8 sm:mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            In an emergency, every second matters. Our dedicated team of professionals is always ready to respond swiftly and effectively.
-          </p>
+    <p className="text-sm sm:text-xl md:text-2xl mb-8 sm:mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed">
+      Every second counts during an emergency. Our experienced and compassionate team is always prepared to respond quickly and provide the best care when you need it most.
+    </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-10 py-3 sm:py-5 rounded-xl font-bold text-sm sm:text-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
-              📞 Emergency Call: 911
-            </button>
-          <Link to="/contact">
-  <button className="bg-transparent backdrop-blur-sm border-2 border-white text-white px-6 sm:px-10 py-3 sm:py-5 rounded-xl font-bold text-sm sm:text-lg hover:bg-white/10 transform transition-transform duration-300 hover:scale-105">
-    Contact Us
-  </button>
-</Link>
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+      <button className="bg-red-600 hover:bg-red-700 text-white px-6 sm:px-10 py-3 sm:py-5 rounded-xl font-bold text-sm sm:text-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+        📞 Emergency Call: 911
+      </button>
 
-          </div>
+      <Link to="/contact">
+        <button className="bg-transparent backdrop-blur-sm border-2 border-white text-white px-6 sm:px-10 py-3 sm:py-5 rounded-xl font-bold text-sm sm:text-lg hover:bg-white/10 transform transition-transform duration-300 hover:scale-105">
+          Contact Us
+        </button>
+      </Link>
+    </div>
 
-          <p className="mt-6 sm:mt-12 text-white/70 text-xs sm:text-sm">
-            For non-emergency inquiries, please use our contact form or call our office during business hours.
-          </p>
-        </div>
-      </div>
+    <p className="mt-6 sm:mt-12 text-white/70 text-xs sm:text-sm">
+      For non-emergency assistance or general inquiries, please reach out using our contact form or call our office during working hours.
+    </p>
+  </div>
+</div>
+
 
       <style jsx>{`
         @keyframes float {

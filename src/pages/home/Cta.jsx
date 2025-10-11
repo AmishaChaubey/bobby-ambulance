@@ -18,7 +18,7 @@ export default function CallToAction() {
         {/* Left side - Ambulance GIF */}
         <div className="relative w-full md:w-1/2 flex justify-center md:justify-start">
           <img
-            className="w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96 object-contain rounded-2xl shadow-2xl"
+            className="w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96 object-contain"
             src="/cta.gif"
             alt="Ambulance Service"
           />
