@@ -25,15 +25,15 @@ const StatsBar = () => {
       setLivesSaved(livesCount);
     }, 50);
 
-    // Animation for ambulances ready
-    const ambulanceTimer = setTimeout(() => {
-      setAmbulancesReady(100);
+    // Animation for transport units (5+)
+    const transportTimer = setTimeout(() => {
+      setTransportUnits(5);
     }, 800);
 
     return () => {
       clearTimeout(responseTimer);
       clearInterval(livesInterval);
-      clearTimeout(ambulanceTimer);
+      clearTimeout(transportTimer);
     };
   }, []);
 
@@ -83,35 +83,35 @@ const StatsBar = () => {
           <div className="w-24 h-1 bg-gray-800 mx-auto rounded-full"></div>
         </div>
 
-        {/* Stats Container with Timeline Design */}
+        {/* Stats Container */}
         <div className="relative">
           {/* Timeline Line for Desktop */}
           <div className="absolute top-1/2 left-0 right-0 h-1 bg-gray-300 transform -translate-y-1/2 hidden md:block"></div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`relative flex flex-col items-center transition-all duration-700 ${stat.delay} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+                className={`relative flex flex-col items-center transition-all duration-700 ${stat.delay} ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+                }`}
               >
-            
-                
                 {/* Stat Card */}
                 <div className="bg-white rounded-xl shadow-lg p-6 w-full hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
                   {/* Icon Container */}
                   <div className="w-16 h-16 bg-gray-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 text-2xl">
                     {stat.icon}
                   </div>
-                  
+
                   {/* Value */}
                   <div className="text-3xl font-bold text-gray-800 text-center mb-1">
                     {typeof stat.value === 'number' ? stat.value.toLocaleString() : stat.value}
                     <span className="text-xl">{stat.suffix}</span>
                   </div>
-                  
+
                   {/* Label */}
                   <div className="text-sm text-gray-600 text-center">{stat.label}</div>
-                  
+
                   {/* Hover Effect Line */}
                   <div className="h-0.5 w-0 bg-gray-800 mx-auto mt-3 group-hover:w-full transition-all duration-500"></div>
                 </div>
